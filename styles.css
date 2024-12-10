@@ -1,0 +1,422 @@
+/*Diego Haro*/
+/*12/04/24*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C0BCB5;
+}
+/*font style for title*/
+.ga-maamli-regular {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background: #8b7552;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 22% 43% 35%;
+    grid-template-rows: 30% 70%;
+    padding: 10px 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    padding-top: 90px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1 / 2;
+  }
+  
+  .logo {
+    width: 220px;
+    height: auto;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 50px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 4em;
+  }
+  
+  
+  /* Styling for the top part of the title */
+  .top-line {
+    display: block;
+    font-weight: bold;
+  
+  }
+  
+  /* Styling for the bottom part of the title */
+  .bottom-line {
+    display: block;
+    font-weight: bold;
+    margin: 3px 0px 5px 0px;
+    /* Adds space between the top line and bottom word */
+  }
+  /*white box with media*/
+  .contact-block {
+    grid-column: 3;
+    grid-row: 1 / 2;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-icons {
+    display: flex;             
+    justify-content: center;     
+    align-items: center;
+    margin: auto;  
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+  
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.5);
+  }
+  
+  .contact-info {
+    font-size: 0.9rem;
+    color: #424242;
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+
+h1 {
+    font-size: 4.5em;
+    margin-bottom: 5px;
+}
+
+
+h2 {
+    font-size: 2em;
+    padding: 5px 0px 25px 0px;
+}
+
+p{
+    font-size: 1.3em;
+    margin: 7px;
+}
+
+img {
+    float: right;
+    width: 40%;
+    padding-left: 8px;
+    
+}
+
+
+/*Color animation for tiles*/
+/* ani = animate */
+.ani {
+    text-align: center;
+    color: transparent;
+    background-image: linear-gradient(to left, #8B2635, #802d2d, #921616, #f39c12);
+    background-clip: text;
+    animation: animate 6s linear infinite;
+    background-size: 500%;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/*Nav styles*/
+nav {
+    background-color: #afa691;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+a {
+    padding: 10px 20px 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #8B2635;
+    text-decoration: none;
+
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+article{
+    background-color: #ad9a7b;
+    clear: both;
+    padding: 30px;
+    height: 400px;
+    width: 96.6%;
+}
+/*form*/
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+img {
+    width: 300px;
+}
+
+/*Contact*/
+.containercontact {
+    background-color: #C0BCB5;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #0a78ee;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #0e75e2;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1565bb;
+}
+
+
+/*Eduction table*/
+.table-container {
+    background-color: #C0BCB5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/*tablet*/
+@media (max-width: 1500px) {
+
+    header {
+      grid-template-columns: 20% 35% 45%;
+      grid-template-rows: 30% 70%;
+    }
+    
+
+    .title {
+      font-size: 2.4em;
+  
+    }
+  
+    .contact-info {
+      font-size: 1rem;
+    }
+  
+    .social-icons {
+      padding: 10px;
+    }
+  }
+  
+ 
+    
+  
+/* Phone */
+@media (max-width: 830px) {
+    header {
+  
+        grid-template-columns: 27% 24% 15% 35%;
+        grid-template-rows: 30% 70%;
+      }
+    
+      .logo {
+        width: 150px;
+      }
+    
+      .title {
+        font-size: 2em;
+    
+      }
+    
+      .contact-block {
+        grid-column: 4;
+        padding: 10px;
+        margin: 10px 10px 20px 0px;
+      }
+    
+      .contact-info {
+        font-size: .7rem;
+      }
+    
+    
+      .social-icons img {
+        width: 20px;
+        margin: 0px 1px 0px 1px;
+        transition: transform 0.3s ease;
+      }
+
+
+    nav ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    article{
+        height: 800px;
+        width: 100%;
+    }
+    
+
+    img {
+        width: 200px;
+    }
+
+    .containercontact {
+        padding: 20px;
+}
+
+table {
+    font-size: 14px;
+}
+
+}
+
+@media (max-width: 430px)
+{
+    nav ul li {
+        display: block;
+        margin-right: 20px;
+    }
+    
+}
